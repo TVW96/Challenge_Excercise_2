@@ -17,7 +17,7 @@
 body {
     background-color: var(--background-color);
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 h1 {
@@ -74,8 +74,7 @@ h3 {
 }
 
 section {
-    margin-block: 40px;
-    margin-inline: 20px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -95,6 +94,9 @@ td {
     border-width: 1px;
     border-color: black;
     border-style: solid;
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
 }
 
 th {
@@ -106,7 +108,6 @@ th {
 }
 
 tr {
-    margin: 5px;
     border-width: 1px;
     border-color: black;
     border-style: solid;
@@ -134,4 +135,39 @@ form input[type=text] {
 
 .carousel-inner {
     align-items: center;
+}
+
+
+.top5 {
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    padding-block: 10px;
+    padding-left: 5ch;
+}
+
+.comment-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#comment {
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+#name {
+    width: 30%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 }
